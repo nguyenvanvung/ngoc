@@ -1,0 +1,88 @@
+<html>
+		<head>
+			<title></title>
+		</head>
+		<body>
+			<table border="2" cellpadding="10"
+				<tr>
+					<td>number 1</td>
+					<td><input type="text" id="number1"></td>
+			    </tr>
+			    <tr>
+					<td>number 2</td>
+					<td><input type="text" id="number2"></td>
+				</tr>
+				<tr>
+					<td>option</td>
+					<td>
+						<select id="pheptoan">
+							<option value="cong">cong</option>
+							<option value="tru">tru</option>
+							<option value="nhan">nhan</option>
+							<option value="chia">chia</option
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>result</td>
+					<td><input type="text" id="ketqua"></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="button" value="tinhtoan" onclick="tinhToan()">
+					</td>
+				</tr>
+
+			</table>
+			<script >
+				function tinhToan() {
+					console.log('bat dau tinh toan');
+					var number1=document.getElementById('number1').value;
+					var number2=document.getElementById('number2').value;
+					var pheptoan=document.getElementById('pheptoan').value;
+
+					console.log(number1);
+					console.log(number2);
+					console.log(pheptoan);
+
+					//chuyen kieu du lieu
+					number1 = parseFloat(number1);
+					number2 = parseFloat(number2);
+					
+
+
+					//tinh toan cach 1
+					// if(pheptoan == 'cong'){
+					// 	kq = number1 + number2;
+					// 	//ghi ket qua ra man hinh
+					// 	document.getElementById('ketqua').value = kq;
+
+					// }else if(pheptoan == 'tru'){
+					// 	kq = number1 - number2;
+					// 	document.getElementById('ketqua').value = kq;
+
+					// }else if(pheptoan == 'nhan'){
+					// 	kq = number1 * number2;
+					// 	document.getElementById('ketqua').value = kq;
+
+					// }else if(pheptoan == 'chia'){
+					// 	kq = number1 / number2; 
+					// 	document.getElementById('ketqua').value = kq;
+
+					// }else{
+					// 	alert("phep toan phai chon trong danh sach");
+					// }
+
+
+
+					// body...
+					//sử dụng switch ...case
+					switch(pheptoan){
+						case 1:
+						//break code
+						break:
+
+					}
+			</script>
+		</body>
+</html>
